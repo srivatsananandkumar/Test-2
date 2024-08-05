@@ -31,7 +31,7 @@ main {
   height: 640px;
   background-color: #fff;
   border-radius: 3.3rem;
-  box-shadow:  0px 0px 25px #50f774; /* Inset shadow */
+  box-shadow:  0px 0px 25px #000000; /* Inset shadow */
 }
 
 
@@ -362,6 +362,97 @@ main.sign-up-mode .carousel {
     width: 100%;
   }
 }
+
+/* Profile Page Styles */
+.profile-overview {
+  background-color: #ffffff;
+  padding: 2rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 2rem;
+}
+
+.profile-details h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.profile-details p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.edit-profile-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #00a300;
+  border-radius: 5px;
+  color: #00a300;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+  background-color: #00a300;
+  color: #ffffff;
+}
+
+.profile-info,
+.profile-activity {
+  margin-top: 2rem;
+}
+
+.profile-info h2,
+.profile-activity h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background-color: #e8f5e9;
+  color: #00a300;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+.activity-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.activity-list li {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.activity-list li strong {
+  color: #333;
+}
+
 
 @media (max-width: 530px) {
   main {

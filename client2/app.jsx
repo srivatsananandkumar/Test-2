@@ -37,3 +37,31 @@ function moveSlider() {
 bullets.forEach((bullet) => {
   bullet.addEventListener("click", moveSlider);
 });
+document.addEventListener("DOMContentLoaded", function() {
+  // Ensure the profile page is loaded correctly
+  console.log("Profile page is ready");
+
+  // Add more JavaScript as needed for the profile page
+  // Example: Toggling edit profile section, fetching user data, etc.
+
+  const editProfileBtn = document.querySelector('.edit-profile-btn');
+  if (editProfileBtn) {
+    editProfileBtn.addEventListener('click', function() {
+      // Logic to edit the profile, e.g., open a modal or redirect to an edit page
+      console.log("Edit profile button clicked");
+    });
+  }
+
+  // More JS functionalities can be added here...
+});
+document.addEventListener("DOMContentLoaded", function() {
+  const signInForm = document.querySelector('.sign-in-form');
+  if (signInForm) {
+    signInForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Assuming a successful sign-in, navigate to the profile page
+      window.location.href = 'profile.html'; // Replace with your router logic if using React Router
+    });
+  }
+});
